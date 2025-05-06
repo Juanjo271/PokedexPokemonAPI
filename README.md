@@ -60,3 +60,10 @@ http://localhost:3000
 
 Usa el buscador para encontrar Pokémon por nombre . 
 
+![image](https://github.com/user-attachments/assets/27025350-3dca-49d9-929f-aac5eac1977f)
+
+![image](https://github.com/user-attachments/assets/6cdd77fb-7060-474e-91a7-a331b4a64113)
+
+
+
+
