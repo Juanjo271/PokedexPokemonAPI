@@ -35,7 +35,7 @@ app.listen(port, () => {
     try {
         const result = await axios.get(`${POKEMONDATA_URL}${pokeID}`);
         const resultDex = await axios.get(`${POKEMONPOKEDEX_URL}${pokeID}/`);
-        const flavor = resultDex.data.flavor_text_entries.find(entry => entry.language.name === "es");
+        const flavor = resultDex.data.flavor_text_entries.find(entry => entry.language.name === "en");
         var pokemonList = result.data;  
         pokemonList.dexEntry = flavor ? flavor.flavor_text.replace(/\f/g, ' ') : "No description available";
         res.render("cardInfo.ejs", { pokemon: pokemonList });  
