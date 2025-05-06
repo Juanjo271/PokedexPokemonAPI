@@ -1,0 +1,22 @@
+<%- include ("./partials/header.ejs") %>
+
+<div class="row justify-content-center">
+    <% pokemons.forEach(pokemon => { %>
+        <div class="col-md-4 mt-4 d-flex justify-content-center">
+            <a href="/pokemon/<%= pokemon.id %>" class="text-decoration-none text-dark">
+                <div class="card shadow" style="width: 18rem; cursor: pointer;">
+                    <div class="card-header text-end text-muted fw-bold">
+                        #<%= pokemon.id %>
+                    </div>
+                    <img src="<%= pokemon.img %>" class="card-img-top mx-auto d-block mt-3" alt="Image of <%= pokemon.name %>" style="width: 120px; height: 120px;">
+                    <div class="card-body bg-light text-center">
+                        <h5 class="card-title text-dark text-capitalize"><%= pokemon.name %></h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    <% }); %>
+</div>
+
+
+<%- include ("./partials/footer.ejs") %>
